@@ -1,6 +1,5 @@
 import streamlit as st
 import pickle
-import sklearn
 
 st.title('Heart diseases prediction - Прогнозирование сердечных заболеваний')
 st.write('Изменение шкал признаков для получения прогноза')
