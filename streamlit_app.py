@@ -33,7 +33,7 @@ alco = st.selectbox('Отношение к алкоголю: ', [' 0 ', ' 1 '], 
 active = st.selectbox('Отношение к спорту: ', [' 0 ', ' 1 '], key='active')
 
 def load ():
-    with open("/model.pcl", "rb") as fid:
+    with open("/app/streamlit/model.pcl", "rb") as fid:
       return pickle.load(fid)
    
 model = load()
