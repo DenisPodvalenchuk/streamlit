@@ -33,7 +33,7 @@ alco = st.selectbox('Отношение к алкоголю: ', [' 0 ', ' 1 '], 
 active = st.selectbox('Отношение к спорту: ', [' 0 ', ' 1 '], key='active')
 
 def load ():
-    with open("https://github.com/DenisPodvalenchuk/streamlit/model.pcl", "rb") as fid:
+    with open("model.pcl", "rb") as fid:
       return pickle.load(fid)
 
 uploaded_file = st.file_uploader("Choose your database", accept_multiple_files=False)
