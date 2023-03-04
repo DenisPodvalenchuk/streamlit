@@ -36,6 +36,12 @@ def load ():
     with open("c:/project-new/model.pcl", "rb") as fid:
       return pickle.load(fid)
 
+uploaded_file = st.file_uploader("Choose your database", accept_multiple_files=False)
+if uploaded_file is not None:
+    file_name = uploaded_file
+else:
+    file_name = "model.pcl"
+    
 model = load()
 y_pr = model.predict_proba([[gender, height, weight, ap_hi, ap_lo, cholesterol, gluc, smoke, alco, active, year]])[:, 1]
 
