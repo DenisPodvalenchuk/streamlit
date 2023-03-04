@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
-pip install -U scikit-learn scipy matplotlib
+import sklearn
+
 st.title('Heart diseases prediction - Прогнозирование сердечных заболеваний')
 st.write('Изменение шкал признаков для получения прогноза')
 
